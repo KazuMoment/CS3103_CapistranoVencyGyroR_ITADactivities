@@ -60,13 +60,13 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Login Page"),
+        title: const Text("Welcome!"),
         centerTitle: true,
-        backgroundColor: Colors.grey,
+        backgroundColor: const Color.fromARGB(255, 65, 162, 168),
         titleTextStyle: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 40.0,
-          color: Colors.black54,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
       ),
       body: Padding(

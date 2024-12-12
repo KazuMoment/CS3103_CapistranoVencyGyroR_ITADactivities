@@ -8,7 +8,7 @@ class SkillsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Skills'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: const Color.fromARGB(255, 65, 162, 168),
         iconTheme: const IconThemeData(
           color: Colors.white,
         ),

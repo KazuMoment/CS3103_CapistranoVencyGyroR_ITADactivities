@@ -25,14 +25,14 @@ class _MyCVPageState extends State<MyCVPage> {
       appBar: AppBar(
         title: const Text('CV'),
         centerTitle: true,
-        backgroundColor: Colors.grey,
+        backgroundColor: const Color.fromARGB(255, 65, 162, 168),
       ),
       drawer: Drawer(
         child: ListView(
           children: [
             const DrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color:  Color.fromARGB(255, 65, 162, 168),
                 ),
                 child: Align(
                   alignment: Alignment.centerLeft,
@@ -49,7 +49,7 @@ class _MyCVPageState extends State<MyCVPage> {
             ListTile(
               leading: const Icon(
                 Icons.school_rounded,
-                color: Colors.blueGrey,
+                color:  Color.fromARGB(255, 65, 162, 168),
               ),
               title: const Text('Education'),
               onTap: () {
@@ -59,7 +59,7 @@ class _MyCVPageState extends State<MyCVPage> {
             ListTile(
               leading: const Icon(
                 Icons.code_rounded,
-                color: Colors.blueGrey,
+                color:  Color.fromARGB(255, 65, 162, 168),
               ),
               title: const Text('Skills'),
               onTap: () {
@@ -69,7 +69,7 @@ class _MyCVPageState extends State<MyCVPage> {
             ListTile(
               leading: const Icon(
                 Icons.create_new_folder,
-                color: Colors.blueGrey,),
+                color: Color.fromARGB(255, 65, 162, 168),),
               title: const Text('Projects'),
               onTap: () {
                 Navigator.pushNamed(context, '/projects');
@@ -78,7 +78,7 @@ class _MyCVPageState extends State<MyCVPage> {
             ListTile(
               leading: const Icon(
                 Icons.download_done_rounded,
-                color: Colors.blueGrey,
+                color: Color.fromARGB(255, 65, 162, 168),
               ),
               title: const Text('Experience'),
               onTap: () {
@@ -88,7 +88,7 @@ class _MyCVPageState extends State<MyCVPage> {
             ListTile(
               leading: const Icon(
                 Icons.logout_rounded,
-                color: Colors.blueGrey,
+                color:  Color.fromARGB(255, 65, 162, 168),
               ),
               title: const Text('Logout'),
               onTap: () {
@@ -111,7 +111,7 @@ class _MyCVPageState extends State<MyCVPage> {
                 )
                     : const CircleAvatar(
                   radius: 65.0,
-                  backgroundColor: Colors.grey,
+                  backgroundColor: Color.fromARGB(255, 65, 162, 168),
                   child: Text(
                     'VGC',
                     style:
@@ -136,16 +136,30 @@ class _MyCVPageState extends State<MyCVPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 20.0,),
+            const SizedBox(height: 5.0,),
             const Text(
               '09238291022',
               style: TextStyle(fontSize: 18.0,),
             ),
-            const SizedBox(height: 15.0,),
+            const SizedBox(height: 5.0,),
             const Text(
-              '21-08183@g.batstate-u.edu.ph',
+              '22-08183@g.batstate-u.edu.ph',
               style: TextStyle(fontSize: 18.0,),
-            )
+            ),
+            Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                height: 150,
+                width: 360,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: const Text(
+                  'Professional Goal',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                ),
+            ),
           ],
         ),
       ),
